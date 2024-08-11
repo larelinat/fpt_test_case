@@ -1,0 +1,13 @@
+@import "src/variables";
+.card {
+  background: $background;
+  border: 1px solid #DDDDDD;
+  box-shadow: 0 1px 8px 0 var(--card-bg, #00000040);
+  border-radius: 4px;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 24px;
+  min-height: 500px;
+}

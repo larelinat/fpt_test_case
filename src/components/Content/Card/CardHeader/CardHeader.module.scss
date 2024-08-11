@@ -1,0 +1,36 @@
+@import "src/variables";
+
+.card_header {
+  padding: 12px 20px;
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  border-bottom: 1px solid $border-color;
+
+  .left {
+    display: flex;
+    gap: 6px;
+    font-size: $font-size_description;
+    line-height: 16.1px;
+
+    .id {
+      color: $link-color;
+    }
+  }
+
+  .right {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    .user {
+      font-size: $font-size_login;
+      line-height: 18.4px;
+      color: $link-color;
+    }
+
+    .pic {
+      width: 17px;
+      height: 17px;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@import "variables";
+
+body {
+  margin: 0;
+  background: $background;
+}
+
+.app {
+  padding: 20px;
+  font-family: $font;
+  font-weight: $font-weight;
+  color: $color;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  position: relative;
+
+  .focused {
+    --card-bg: rgba(255, 0, 0, 0.5) !important;
+  }
+}
+

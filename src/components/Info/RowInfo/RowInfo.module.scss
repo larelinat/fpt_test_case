@@ -1,0 +1,25 @@
+@import "src/variables";
+
+.row {
+  display: flex;
+  gap: 8px;
+  font-size: $font-size_description;
+  line-height: 16.1px;
+
+  .param {
+    color: $param-color;
+    width: 71px;
+  }
+
+  .circle {
+    min-width: 6px;
+    min-height: 6px;
+    align-self: center;
+    shape-outside: circle();
+    clip-path: circle();
+  }
+
+  .key {
+    color: $key-color;
+  }
+}

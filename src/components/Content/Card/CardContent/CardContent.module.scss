@@ -1,0 +1,44 @@
+@import "src/variables";
+
+.content {
+  padding: 0 20px 24px 20px;
+  display: flex;
+  gap: 8px;
+  align-self: stretch;
+  flex-direction: column;
+
+  .header {
+    font-size: $font-size_header;
+    line-height: 27.6px;
+  }
+
+  .description {
+    display: flex;
+    gap: 16px;
+
+    .text {
+      padding: 8px 0 0 0;
+      font-size: $font-size_text;
+      line-height: 21.56px;
+      width: 70%;
+    }
+
+    .divider {
+      width: 1px;
+      border-left: 1px solid $border-color;
+    }
+
+    .pictures {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding: 8px 0 0 0;
+      width: 30%;
+
+      .pic {
+        max-width: 200px;
+        max-height: 200px;
+      }
+    }
+  }
+}
