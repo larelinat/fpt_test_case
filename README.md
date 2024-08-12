@@ -3,8 +3,11 @@
 
 Для запуска проекта:
 ```bash
-yarn install
-yarn dev
+yarn install; yarn dev
+```
+или
+```bash
+npm install; npm run dev
 ```
 
 Сервер базы данных запустится вместе с приложением :)<br><br>
