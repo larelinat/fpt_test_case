@@ -1,0 +1,1 @@
+export const pathApi = import.meta.env.PROD ? 'https://fpr-json-server-fd27togsh-larelinats-projects.vercel.app' : 'http://localhost:3000';

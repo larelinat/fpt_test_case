@@ -1,4 +1,5 @@
 import {useEffect, useRef, useState, useCallback} from "react";
+import {pathApi} from "../vars.ts";
 
 export interface IAdvFromServer {
     id: number;
@@ -81,7 +82,7 @@ export const useFarpost = () => {
         setIsLoading(true);
         setIsError(false);
         try {
-            const response = await fetch(`http://localhost:3000/ads?_start=${start}&_limit=${limit}`);
+            const response = await fetch(`${pathApi}/ads?_start=${start}&_limit=${limit}`);
             const data: IAdvFromServer[] = await response.json();
             setData(data);
         } catch (e) {
@@ -99,7 +100,7 @@ export const useFarpost = () => {
             setIsError(false);
             console.log(dataProcessed);
             try {
-                await fetch(`http://localhost:3000/managed`, {
+                await fetch(`${pathApi}/managed`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
