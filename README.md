@@ -1,7 +1,8 @@
 # Тестовое задание на позицию FrontEnd-разработчика в Farpost
 
+### Приложение захостил по ссылке: [fpt-test-case](https://fpt-test-case.vercel.app/) (Vercel) ###
 
-Для запуска проекта:
+Для запуска проекта локально:
 ```bash
 yarn install; yarn dev
 ```
